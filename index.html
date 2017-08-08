@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="lib/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<title>BlackJack</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body style="margin-top:30px;">
+	<div class="container">
+		<h2>BlackJack V2.0</h2>
+		<button id="hitButton" class="btn btn-default" onclick="Game.hit();">Hit</button>
+		<button id="stickButton" class="btn btn-default" onclick="Game.stick();">Stick</button>
+		<button id="restartButton" class="btn btn-danger" onclick="refreshWindow();">Restart Game</button>
+		<br><br>
+		<div id="output"></div>
+		<p>Current Hand:</p>
+		<ul id="currentHand"></ul>
+		<br>
+		<p>Current Total:</p>
+		<span id="currentTotal">0</span>
+		<br><br>
+		<p>Dealer's Cards:</p>
+		<span id="aiCards">0</span>
+	</div>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/handlebars.min.js"></script>
+	<script type="text/javascript" src="Game.js"></script>
+</body>
+</html>
